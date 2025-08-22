@@ -194,7 +194,7 @@ def generate_followup_questions(conversation_context, query, response, count=2):
         messages.append({"role": "user", "content": "Follow-up questions (separated by |):"})
         
         data = {
-            "model": "gpt-3.5-turbo",  # Using a faster model for this
+            "model": "gpt-4o-mini",  # Using a faster model for this
             "messages": messages,
             "max_tokens": 50,
             "temperature": 0.7
